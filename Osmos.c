@@ -16,6 +16,9 @@ GLint others[MAX][5];
 
 GLint flag = 0;
 
+void GameOver(int x, int y, char *string);
+void InitialiseOthers();
+
 int timeval_subtract(struct timeval *result, struct timeval *t2, struct timeval *t1)
 {
     long int diff = (t2->tv_usec + 1000000 * t2->tv_sec) - (t1->tv_usec + 1000000 * t1->tv_sec);
